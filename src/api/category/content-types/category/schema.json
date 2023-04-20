@@ -22,7 +22,13 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "categories"
     }
   }
 }
