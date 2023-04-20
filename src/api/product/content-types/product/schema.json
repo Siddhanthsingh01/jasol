@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "mrp": {
+      "type": "decimal"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "item_model_number": {
+      "type": "string"
+    },
+    "ASIN": {
+      "type": "string"
+    },
+    "Technical_Manufacturer": {
+      "type": "string"
+    },
+    "country_of_origin": {
+      "type": "string"
+    },
+    "Packer": {
+      "type": "string"
+    },
+    "Importer": {
+      "type": "string"
+    },
+    "Item_Weight": {
+      "type": "string"
+    },
+    "Item_Dimensions_LxWxH": {
+      "type": "string"
+    },
+    "Net_Quantity": {
+      "type": "string"
+    },
+    "Included_Components": {
+      "type": "string"
+    },
+    "Generic_Name": {
+      "type": "string"
+    },
+    "Best_Sellers_Rank": {
+      "type": "string"
+    },
+    "Additional_Manufacturer": {
+      "type": "string"
+    },
+    "Product_description": {
+      "type": "text"
+    },
+    "box_item": {
+      "type": "text"
+    }
+  }
+}
